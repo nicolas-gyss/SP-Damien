@@ -1,0 +1,222 @@
+/* Generalité */
+img{
+    max-width:100%;
+}
+
+p{
+    padding:0px;
+    margin:0px;
+}
+
+html{
+    font-size:62.5%; /* taille de police 10px = 1rem */
+    font-family: Lato;
+}
+
+body{
+    font-size:1.4rem; /* taille de police 14px */
+}
+
+
+ul, li{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+.main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content{
+    width: 77.6%;
+    margin:auto;
+    display: flex; /* l'ensemble du site est en mode flex */
+}
+
+/* Généralité - Couleur de fond */
+
+.main{
+    background: #e8ebeb;
+}
+
+.reass{
+    background: #393939;
+}
+
+.social{
+    background: #558540;
+}
+
+.cookie{
+    background: #f6f9f9;
+}
+
+
+/* Généralité - titre */
+h1, h2, h3, h4{
+    font-weight: bold;
+    color: #333231;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.55;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.65;
+}
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+/********* CODE PERSONNEL NICO   *******/
+.reass{
+
+}
+
+.reass-content{
+    padding:19px 0px 27px 0px;
+}
+
+.reass-content ul{
+    display: flex;
+    justify-content:space-around;
+    width:100%;
+}
+
+.reass-content li{
+    text-align: center;
+}
+
+.reass-content p{
+    color:#ffffff;
+    padding-top:5px;
+}
+
+
+/********* FIN CODE PERSONNEL NICO   *******/
+
+/***************************
+    AIDE DE CONCEPTION
+
+
+.large-price {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #558540;
+}
+
+.little-price {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.61;
+    text-align: center;
+    color: #558540;
+}
+
+.compte {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    text-align: center;
+    color: #333231;
+}
+
+.navigation {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #696969;
+}
+
+
+.placeholder {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.71;
+    text-align: center;
+    color: #7f7f7f;
+}
+
+.main-text {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    color: #ffffff;
+}
+
+.tabs-title {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    color: #62605e;
+}
+
+.tabs-title-active {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    color: #558540;
+}
+
+.Avis {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333231;
+}
+
+.Text-Style-10 {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333231;
+}
+
+.liste-footer {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.67;
+    color: #62605e;
+}
+
+link {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    color: #558540;
+}
+
+.discount {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    color: #62605e;
+}
+
+.text-cookie {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.67;
+    text-align: center;
+    color: #62605e;
+}
+
+
+*/
