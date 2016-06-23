@@ -263,6 +263,13 @@ a:hover{
     flex:2;
 }
 
+/* TEST  */
+.bloc-conseil .column{
+    min-width:auto;
+    min-height: auto;
+}
+/********/
+
 .bloc-conseil li{
     margin: 0px 0px 20px 0px;
 }
@@ -291,18 +298,25 @@ a:hover{
     margin-right:0px;
 }
 
-.phone{
-
-}
 
 .phone span{
+
     color: #f19319;
+    padding: 15px 10px 14px 10px;
+    text-align: center;
+    display: block;
+    background-color: #393939;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+   /* color: #f19319;
     padding: 15px 15px 14px 13px;
     display: block;
     background-color: #393939;
-    width: 136px;
+    width: 100%; /* 136px
     font-size: 1.6rem;
-    border-radius: 3px;
+    border-radius: 3px;*/
 }
 
 .phone span:before{
