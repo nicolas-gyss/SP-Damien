@@ -1,6 +1,7 @@
 /* Generalité */
 img{
     max-width:100%;
+    height: auto;
 }
 
 p{
@@ -118,12 +119,14 @@ a:hover{
 }
 
 .column-1-3{
-    width:40.4%;
+    /*width:40.4%;*/
+    flex:2;
     text-align: center;
 }
 
 .payment-content ul{
     padding: 3px 0px 0px 0px;
+    flex: 3;
 }
 
 .payment-content li{
@@ -161,6 +164,10 @@ a:hover{
 
 .social-content label{
     padding-right:10px;
+}
+
+.social-content .news div{
+    display: inline-block;
 }
 
 .social-content .news{
@@ -230,7 +237,84 @@ a:hover{
 
 /* bandeau footer avec colonne */
 
-/* A CODER */
+.footer-content{
+    padding:34px 0px 24px 0px;
+    font-size: 1.2rem;
+}
+
+.footer-content a, .footer-content a:visited{
+    text-decoration: underline;
+    color: #62605e;
+    line-height:1.67;
+}
+
+.footer-content a:hover{
+    color: #558540;
+    cursor: hand;
+}
+
+.footer-content .column{
+    flex:1;
+    margin-right:50px;
+}
+
+.bloc-conseil{
+    display: flex;
+    flex:2;
+}
+
+.bloc-conseil li{
+    margin: 0px 0px 20px 0px;
+}
+
+.bloc-conseil li:last-child{
+    margin: 0px 0px 0px 0px;
+}
+
+.footer-content h4{
+    margin-top:0px;
+    padding-top:0px;
+    margin-bottom:23px;
+}
+
+.footer-content p{
+    margin-bottom:20px;
+}
+
+.footer-content .bloc-conseil .column{
+    margin-right:30px;
+    min-width: 0; /* corrige la déformation des images du au flex*/
+    min-height: 0; /* corrige la déformation des images du au flex*/
+}
+
+.footer-content .bloc-conseil .column:last-child{
+    margin-right:0px;
+}
+
+.phone{
+
+}
+
+.phone span{
+    color: #f19319;
+    padding: 15px 15px 14px 13px;
+    display: block;
+    background-color: #393939;
+    width: 136px;
+    font-size: 1.6rem;
+    border-radius: 3px;
+}
+
+.phone span:before{
+    display: inline-block;
+    content: '';
+    height: 14px;
+    width:14px;
+    background:url("../img/icon-tel.png") no-repeat;
+    background-size: contain;
+    margin-right:12px;
+}
+
 
 
 /* bandeau cookie */
