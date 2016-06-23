@@ -377,17 +377,21 @@ a:hover{
 
 
 @media screen and (max-width: 1296px) {
-    /* Test affichage en dessous de 1296px*/
+    /* Test affichage en dessous de 1296px petit desktop + tablette */
+
+    .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content{
+        width:95%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Test affichage en dessous de 800px smartphone*/
     .footer-content, .bloc-conseil, .social-content, .payment-content, .reass-content {
         flex-direction: column;
         text-align: center;
     }
 
-    .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content{
-        width:100%;
-    }
 }
-
 
 
 
