@@ -32,6 +32,10 @@ ul, li{
     display: flex; /* l'ensemble du site est en mode flex */
 }
 
+.main-container{
+    flex-direction:column;
+}
+
 /* Généralité - Couleur de fond */
 
 .main{
@@ -351,6 +355,24 @@ a:hover{
 .text-cookie a, .text-cookie a:visited{
     text-decoration: underline;
     color: #62605e;
+}
+
+/* produit complémentaire */
+.extend-products{
+    background: #ffffff;
+    margin-bottom:53px;
+    padding:20px 10px 8px 10px;
+}
+
+.extend-products h1{
+    margin-top:0px;
+
+}
+
+.extend-products li{
+    display: inline-flex;
+    border:solid 1px #eee8e3;
+
 }
 
 
