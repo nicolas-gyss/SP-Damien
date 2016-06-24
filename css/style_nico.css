@@ -88,6 +88,14 @@ a:hover{
     color: #558540;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 /********* CODE PERSONNEL NICO   *******/
 
 /* Bloc reassurance */
@@ -390,14 +398,86 @@ a:hover{
 }
 
 .extend-products li{
-    display: inline-flex;
+    display: inline-block;
     border:solid 1px #eee8e3;
+    width:241px;
 
 }
 
+.extend-products .produit{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.produit img{
+    margin:15px 0px;
+}
+
+.extend-products p{
+    text-align: left;
+    margin-top: 11px;
+}
+
+.discount{
+    font-size: 1.2rem;
+    color: #62605e;
+}
+
+.discount span{
+    text-decoration: line-through;
+}
+
+.extend-products ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.extend-products h2{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0px;
+    padding:0px;
+
+}
+
+.extend-products div ul{
+    justify-content: flex-end;
+}
+
+.extend-products div li{
+    width:auto;
+
+}
+
+.price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #558540;
+    line-height:15px;
+}
+
+.extend-products div .star{
+    width:14px;
+    height:13px;
+    border:none;
+    background: url("../img/star.png") no-repeat;
+    margin-right: 8px;
+}
+
+.extend-products div .star:last-child{
+    background: url("../img/etoile-non-select.png") no-repeat;
+    margin-right: 0px;
+}
+
+.ir{
+    text-indent:-9999px;
+}
+
+/************* ZONE RESPONSIVE *************************************/
 
 @media screen and (max-width: 1296px) {
-    /* Test affichage en dessous de 1296px petit desktop + tablette */
+    /* Affichage en dessous de 1296px petit desktop + tablette */
 
     .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content{
         width:95%;
@@ -426,7 +506,7 @@ a:hover{
 }
 
 @media screen and (max-width: 800px) {
-    /* Test affichage en dessous de 800px tablette portrait*/
+    /* Affichage en dessous de 800px tablette portrait*/
     .footer-content, .bloc-conseil, .social-content, .reass-content {
         flex-direction: column;
         text-align: center;
@@ -495,12 +575,12 @@ a:hover{
 @media screen and (max-width: 600px) {
     
     /*  Pour debug */
-    .main{
+    /*.main{
         display: none;
     }
     /******************/
     
-    /* Test affichage en dessous de 600px smartphone*/
+    /* Affichage en dessous de 600px smartphone*/
     .footer-content, .bloc-conseil, .social-content, .payment-content, .reass-content {
         flex-direction: column;
         text-align: center;
@@ -539,6 +619,16 @@ a:hover{
         margin-bottom:15px;
     }
 
+    /* bloc produit */
+    .list-produit {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .extend-products .produit{
+        margin-bottom:15px;
+    }
+
 
 }
 
@@ -554,15 +644,6 @@ a:hover{
     font-family: Lato;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-    color: #558540;
-}
-
-.little-price {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.61;
     text-align: center;
     color: #558540;
 }
@@ -647,12 +728,6 @@ link {
     color: #558540;
 }
 
-.discount {
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: normal;
-    color: #62605e;
-}
 
 
 
