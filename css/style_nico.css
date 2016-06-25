@@ -1,6 +1,7 @@
 /* Generalité */
 img{
     max-width:100%;
+    height: auto;
 }
 
 p{
@@ -29,6 +30,10 @@ ul, li{
     width: 77.6%;
     margin:auto;
     display: flex; /* l'ensemble du site est en mode flex */
+}
+
+.main-container{
+    flex-direction:column;
 }
 
 /* Généralité - Couleur de fond */
@@ -83,6 +88,14 @@ a:hover{
     color: #558540;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 /********* CODE PERSONNEL NICO   *******/
 
 /* Bloc reassurance */
@@ -118,12 +131,14 @@ a:hover{
 }
 
 .column-1-3{
-    width:40.4%;
+    /*width:40.4%;*/
+    flex:2;
     text-align: center;
 }
 
 .payment-content ul{
     padding: 3px 0px 0px 0px;
+    flex: 3;
 }
 
 .payment-content li{
@@ -163,6 +178,10 @@ a:hover{
     padding-right:10px;
 }
 
+.social-content .news div{
+    display: inline-block;
+}
+
 .social-content .news{
     margin-right:65px;
 }
@@ -172,16 +191,32 @@ a:hover{
     width:190px;
     height:31px;
     padding:0px;
+    border: none;
+    border-radius: 0px;
 }
 
 .social-content input[type="button"]{
-    border:none;
+    /*border:none;
     background: #333231;
     width:115px;
     height:31px;
     color: #ffffff;
     text-transform: uppercase;
-    font-size:1.4rem;
+    font-size:1.4rem;*/
+
+    background: #333231;
+    width: 115px;
+    height: 31px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 0px;
+    vertical-align: top;
+}
+
+.social-content input[type="button"]:hover{
+    background: #f19319;
 }
 
 .speak-about ul, .speak-about li{
@@ -200,6 +235,10 @@ a:hover{
 
 .speak-about li{
     margin-right:15px;
+}
+
+.speak-about li a:hover{
+    width:95%;
 }
 
 .speak-about li:first-child{
@@ -230,7 +269,98 @@ a:hover{
 
 /* bandeau footer avec colonne */
 
-/* A CODER */
+.footer-content{
+    padding:34px 0px 24px 0px;
+    font-size: 1.2rem;
+}
+
+.footer-content a, .footer-content a:visited{
+    text-decoration: underline;
+    color: #62605e;
+    line-height:1.67;
+}
+
+.footer-content a:hover{
+    color: #558540;
+    cursor: hand;
+}
+
+.footer-content .column{
+    flex:1;
+    margin-right:50px;
+}
+
+.bloc-conseil{
+    display: flex;
+    flex:2;
+}
+
+/* TEST  */
+.bloc-conseil .column{
+    min-width:auto;
+    min-height: auto;
+}
+/********/
+
+.bloc-conseil li{
+    margin: 0px 0px 20px 0px;
+}
+
+.bloc-conseil li:last-child{
+    margin: 0px 0px 0px 0px;
+}
+
+.footer-content h4{
+    margin-top:0px;
+    padding-top:0px;
+    margin-bottom:23px;
+}
+
+.footer-content p{
+    margin-bottom:20px;
+}
+
+.footer-content .bloc-conseil .column{
+    margin-right:30px;
+    min-width: 0; /* corrige la déformation des images du au flex*/
+    min-height: 0; /* corrige la déformation des images du au flex*/
+}
+
+.footer-content .bloc-conseil .column:last-child{
+    margin-right:0px;
+}
+
+
+.phone span{
+
+    color: #f19319;
+    padding: 15px 10px 14px 10px;
+    text-align: center;
+    display: block;
+    background-color: #393939;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+   /* color: #f19319;
+    padding: 15px 15px 14px 13px;
+    display: block;
+    background-color: #393939;
+    width: 100%; /* 136px
+    font-size: 1.6rem;
+    border-radius: 3px;*/
+}
+
+.phone span:before{
+    display: inline-block;
+    content: '';
+    height: 14px;
+    width:14px;
+    background:url("../img/icon-tel.png") no-repeat;
+    background-size: contain;
+    margin-right:12px;
+}
+
 
 
 /* bandeau cookie */
@@ -255,6 +385,254 @@ a:hover{
     color: #62605e;
 }
 
+/* produit complémentaire */
+.extend-products{
+    background: #ffffff;
+    margin-bottom:53px;
+    padding:20px 10px 8px 10px;
+}
+
+.extend-products h1{
+    margin-top:0px;
+
+}
+
+.extend-products li{
+    display: inline-block;
+    border:solid 1px #eee8e3;
+    width:241px;
+
+}
+
+.extend-products .produit{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.produit img{
+    margin:15px 0px;
+}
+
+.extend-products p{
+    text-align: left;
+    margin-top: 11px;
+}
+
+.discount{
+    font-size: 1.2rem;
+    color: #62605e;
+}
+
+.discount span{
+    text-decoration: line-through;
+}
+
+.extend-products ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.extend-products h2{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0px;
+    padding:0px;
+
+}
+
+.extend-products div ul{
+    justify-content: flex-end;
+}
+
+.extend-products div li{
+    width:auto;
+
+}
+
+.price{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #558540;
+    line-height:15px;
+}
+
+.extend-products div .star{
+    width:14px;
+    height:13px;
+    border:none;
+    background: url("../img/star.png") no-repeat;
+    margin-right: 8px;
+}
+
+.extend-products div .star:last-child{
+    background: url("../img/etoile-non-select.png") no-repeat;
+    margin-right: 0px;
+}
+
+.ir{
+    text-indent:-9999px;
+}
+
+/************* ZONE RESPONSIVE *************************************/
+
+@media screen and (max-width: 1296px) {
+    /* Affichage en dessous de 1296px petit desktop + tablette */
+
+    .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content{
+        width:95%;
+    }
+
+    .special:after {
+        top: -15px;
+        right: -50px;
+    }
+
+    .phone span{
+        padding: 15px 5px 14px 5px;
+    }
+
+    .social-content .news{
+        margin-right: 35px;
+    }
+
+    .speak-about ul{
+        margin-right: 30px;
+    }
+
+    .special {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Affichage en dessous de 800px tablette portrait*/
+    .footer-content, .bloc-conseil, .social-content, .reass-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .payment-content{
+        flex-direction: row;
+    }
+
+    .payment-content span{
+        margin:0px;
+        line-height: 36px;
+    }
+
+    .payment-content span, .payment-content ul, .payment-content div{
+        flex:initial;
+        padding:0px;
+    }
+
+    .payment-content ul{
+        padding: 5px 0px 0px 0px;
+    }
+
+    .column-1-3 ul{
+    padding: 0;
+}
+
+
+    .payment-content li, .payment-content li:nth-child(3){
+        margin-right:5px;
+    }
+
+    .social-content{
+        padding-left:0px;
+        flex-direction: row;
+    }
+
+    .social-content label {
+        padding: 0px 0px 5px 0px;
+        display: inline-flex;
+    }
+
+    .social-content .news{
+        margin:0px;
+        line-height: 14px;
+
+    }
+
+    .social-content .special{
+        padding:0px;
+    }
+
+    .speak-about ul{
+        margin-right:0px;
+    }
+    
+    .special:after{
+        display: none;
+    }
+
+    .footer-content .column{
+        margin:10px 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    /*  Pour debug */
+    /*.main{
+        display: none;
+    }
+    /******************/
+    
+    /* Affichage en dessous de 600px smartphone*/
+    .footer-content, .bloc-conseil, .social-content, .payment-content, .reass-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reass-content{
+        padding: 10px 0px 10px 0px;
+    }
+
+    .reass-content ul {
+        flex-direction: column;
+    }
+
+    .reass-content li {
+        padding:10px 0px;
+        border-bottom:solid 1px #efefef;
+    }
+
+    .reass-content li:last-child{
+        border:none;
+    }
+
+    .bloc-conseil .column{
+        margin-right:0px;
+    }
+
+    .column-1-3 ul {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .social-content #newsletter{
+        width:auto;
+    }
+
+    .social-content div{
+        margin-bottom:15px;
+    }
+
+    /* bloc produit */
+    .list-produit {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .extend-products .produit{
+        margin-bottom:15px;
+    }
+
+
+}
+
+
 
 /********* FIN CODE PERSONNEL NICO   *******/
 
@@ -266,15 +644,6 @@ a:hover{
     font-family: Lato;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-    color: #558540;
-}
-
-.little-price {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.61;
     text-align: center;
     color: #558540;
 }
@@ -359,12 +728,6 @@ link {
     color: #558540;
 }
 
-.discount {
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: normal;
-    color: #62605e;
-}
 
 
 
