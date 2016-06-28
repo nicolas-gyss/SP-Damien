@@ -10,116 +10,114 @@
 
 </head>
 <body>
-
     <!-- Header-->
-<div class="heading">
-    <div class="top">
-        <div class="left">
-            <img src="img/picto_phone.png" alt="picto de téléphone" width="14" height="14" />
-            <p>Besoin d’aide ? Contactez nous  du lundi au vendredi de 8h30 à 18h : 08 00 00 00 00</p>
-            <!-- I: faut-il prévoir détection reconnaissance num tél par mobile
-            comme <a href="tel:08 00 00 00 00">08 00 00 00 00</a>  -->
-        </div>
-        <div class="right">
-            <img src="img/localisation.png" alt="picto pour la localisation" width="14" height="15" />
-            <p>Nos Magasins</p>
-        </div>
-    </div>
-    <div class="middle">
-        <div class="branding">
-            <a href="index.html" title="retour à l'accueil">
-                <img src="img/logo-sportnature.png" alt="logo sport nature" width="260" height="79"/>
-            </a>
-        </div>
+    <div class="heading-container">
 
-        <form class="recherche" action="#" method="post">
-            <input type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" id="recherche" />
-            <img src="img/loupe.png" alt="loupe de recherche" width=27" height="27" />
-            <!-- pour loupe intégrer plutôt en icône -->
-        </form>
-        <div class="acces">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="img/profile.png" alt="icône de profile de l'utilisateur" width="27" height="27" />
-                        <p>Mon compte<p/>
+            <div class="top">
+                <div class="left">
+                    <img class="top-icone" src="img/picto_phone.png" alt="picto de téléphone" width="14" height="14" />
+                    <p>Besoin d’aide ? Contactez nous  du lundi au vendredi de 8h30 à 18h : <span>08 00 00 00 00</span></p>
+                    <!-- I: faut-il prévoir détection reconnaissance num tél par mobile
+                    comme <a href="tel:08 00 00 00 00">08 00 00 00 00</a>  -->
+                </div>
+                <div class="right">
+                    <img class="top-icone" src="img/localisation.png" alt="picto pour la localisation" width="14" height="15" />
+                    <p>Nos Magasins</p>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="branding">
+                    <a href="index.html" title="retour à l'accueil">
+                        <img class="logo" src="img/logo-sportnature.png" alt="logo sport nature" width="260" height="79"/>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/panier.png" alt="icône panier" width="31" height="29" />
-                        <p>Panier</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="form">
+                    <form class="recherche" action="#" method="post">
+                        <input type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" id="recherche" />
+                    </form>
+                </div>
+                <div class="compte_pagnier">
+                    <ul class="acces">
+                        <li>
+                            <a href="#">
+                                <img src="img/profile.png" alt="icône de profile de l'utilisateur" width="27" height="27" />
+                                <p>Mon compte<p/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/panier.png" alt="icône panier" width="31" height="29" />
+                                <p>Panier</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li class="current"><a href="#">CHAUSSURES</a></li>
+                    <li><a href="#">VÊTEMENTS</a></li>
+                    <li><a href="#">RANDONNÉE</a></li>
+                    <li><a href="#">PÊCHE</a></li>
+                    <li class="last right">
+                        <a href="#">
+                            <img src="img/carte.png" alt="icône carte" width="25" height="25" />
+                            <p>CARTES ET ITINÉRAIRES</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <nav class="nav-open">
+                <h5>VOIR TOUTES LES CHAUSSURES<span>▶</span></h5>
+                <div class="sous-rubriques">
+                    <div class="homme">
+                        <p>HOMME SPORT</p>
+                        <ul>
+                            <li><span>▶</span> Running - Trail - Athlétisme</li>
+                            <li><span>▶</span>Randonnée - Montagne</li>
+                            <li>▶ Sports d'équipe</li>
+                            <li>▶ Sports de raquette</li>
+                            <li>▶ Natation - Piscine</li>
+                        </ul>
+                    </div>
+
+                    <div class="femme">
+                        <p>FEMME SPORT</p>
+                        <ul>
+                            <li>Running - Trail - Athlétisme</li>
+                            <li>Randonnée - Montagne</li>
+                            <li>Sports d'équipe</li>
+                            <li>Sports de raquette</li>
+                            <li>Natation - Piscine</li>
+                            <li>Sports de combat</li>
+                            <li>Vélo</li>
+                        </ul>
+                    </div>
+
+                    <div class="enfant">
+                        <p>ENFANT SPORT</p>
+                        <ul>
+                            <li>Sports d'équipe</li>
+                            <li>Sports de raquette</li>
+                            <li>Danse</li>
+                            <li>Equitation - Golf</li>
+                            <li>Natation - Piscine</li>
+                        </ul>
+                    </div>
+
+                    <div class="accessoires">
+                        <p>ACCESSOIRES</p>
+                        <ul>
+                            <li>Semelles - Lacets</li>
+                            <li>Entretien</li>
+                            <li>Crampons</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
     </div>
-    <nav class="main-navigation">
-        <ul>
-            <li class="current"><a href="#">CHAUSSURES</a></li>
-            <li><a href="#">VÊTEMENTS</a></li>
-            <li><a href="#">RANDONNÉE</a></li>
-            <li><a href="#">PÊCHE</a></li>
-            <li>
-                <a href="#">
-                    <img src="img/carte.png" alt="icône carte" width="25" height="25" />
-                    <p>CARTES ET ITINÉRAIRES</p>
-                </a>
-            </li>
-        </ul>
-
-    </nav>
-    <nav class="nav-open">
-
-        <p>VOIR TOUTES LES CHAUSSURES</p>
-
-        <div class="homme">
-            <p>HOMME SPORT</p>
-            <ul>
-                <li>Running - Trail - Athlétisme</li>
-                <li>Randonnée - Montagne</li>
-                <li>Sports d'équipe</li>
-                <li>Sports de raquette</li>
-                <li>Natation - Piscine</li>
-            </ul>
-        </div>
-
-        <div class="femme">
-            <p>FEMME SPORT</p>
-            <ul>
-                <li>Running - Trail - Athlétisme</li>
-                <li>Randonnée - Montagne</li>
-                <li>Sports d'équipe</li>
-                <li>Sports de raquette</li>
-                <li>Natation - Piscine</li>
-                <li>Sports de combat</li>
-                <li>Vélo</li>
-            </ul>
-        </div>
-
-        <div class="enfant">
-            <p>ENFANT SPORT</p>
-            <ul>
-                <li>Sports d'équipe</li>
-                <li>Sports de raquette</li>
-                <li>Danse</li>
-                <li>Equitation - Golf</li>
-                <li>Natation - Piscine</li>
-            </ul>
-        </div>
-
-        <div class="accessoires">
-            <p>ACCESSOIRES</p>
-            <ul>
-                <li>Semelles - Lacets</li>
-                <li>Entretien</li>
-                <li>Crampons</li>
-            </ul>
-
-        </div>
-    </nav>
-
-</div>
     <!-- Fin Header-->
 
     <!-- Main-->
