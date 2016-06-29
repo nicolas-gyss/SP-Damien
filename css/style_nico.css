@@ -786,7 +786,42 @@ nav.nav-open h5{
     font-size: 1.2rem;
     color: #558540;
 }
-/* nav.nav-open h5:after{
+
+p:first-child{
+    font-size: 1.4rem;
+    color: #626262;
+    padding-left: 8px;
+    padding-bottom: 21px;
+}
+
+
+/*************************
+        TRIANGLE
+ ************************/
+
+/* triangle avec immage */
+.nav-open h5:after{
+    content: "";
+    background: url("../img/fleche.png") no-repeat;
+    display: inline-block;
+    width: 4px;
+    height: 9px;
+    margin-left: 13px
+}
+
+.sous-rubriques li:before{
+    content: "";
+    background: url("../img/fleche.png") no-repeat;
+    display: inline-block;
+    width: 4px;
+    height: 9px;
+    margin-right: 7px;
+}
+
+
+/* AVANT H5 :  triangle avec css border
+.nav-open h5:after{
+
     content: "";
     border-color: transparent transparent transparent #558540;
     border-style: solid;
@@ -799,14 +834,10 @@ nav.nav-open h5{
 }
 */
 
-p:first-child{
-    font-size: 1.4rem;
-    color: #626262;
-    padding-left: 8px;
-    padding-bottom: 21px;
-}
 
-/*
+
+/* AVANT LI : le triangle avec le css border
+
 .sous-rubriques ul li:before{
 
     content: "";
@@ -821,7 +852,10 @@ p:first-child{
 }
 */
 
-/********* zone responsive   *******/
+
+/******************************************
+     ZONE RESPONSIVE POUR PARTIE HEADER
+*******************************************/
 
 /*
 @media screen and (max-width: 1296px) {
