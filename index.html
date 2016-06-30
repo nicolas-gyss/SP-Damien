@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/style_nico.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+    </script>
+
 </head>
 <body>
     <!-- Header-->
@@ -225,7 +234,7 @@
 
             <div class="description">
                 <div class="description-container">
-                    <div class="tabs">
+                    <div id="tabs">
                         <ul>
                             <li><a href="#tab-descr">DESCRIPTION</a></li>
                             <li><a href="#tab-cara">CARACTÉRISTIQUES</a></li>
