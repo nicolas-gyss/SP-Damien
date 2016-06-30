@@ -682,14 +682,12 @@ img.top-icone{
 }
 .middle-container{
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
-    padding: 7px 30px 7px 10px;
-}
-.form{
-    padding: 25px 48px 25px 0;
+    padding-top: 7px;
 }
 
 .form input{
@@ -703,22 +701,27 @@ img.top-icone{
     font-style: italic;
     font-size: 1.1rem;
 }
-/*
+
 .compte_pagnier ul{
     height: 43px;
 }
-*/
-.compte_pagnier ul:last-child{
+
+.compte_pagnier  li{
+    display: inline-flex;
+    padding: 8px 27px 8px 27px;
+}
+.compte_pagnier ul li:last-child{
     border-left: 1px solid #eee8e3;
+
 }
 
-.compte_pagnier  li {
-    display: inline-flex;
-    margin: 20px 10px 2px 10px;
-}
 .compte_pagnier  li a {
     display: inline-flex;
     color: #333231;
+}
+.compte_pagnier ul li a p{
+    padding-left: 17px;
+    padding-top: 6px;
 }
 
 
@@ -745,7 +748,8 @@ img.top-icone{
 }
 .main-navigation li:last-child{
     background-color: #393939;
-    align-self: flex-end;
+
+    align-self: flex-end; /* ça ne marche pas ici il faudrait aligner à droite*/
 }
 .main-navigation li:last-child a{
     display: inline-flex;
@@ -782,12 +786,17 @@ img.top-icone{
     flex-direction: column;
     padding: 15px 0 50px 0;
 }
+.nav-open-container{
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 .sous-rubriques{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .sous-rubriques > div{
-    margin-right: 64px;
+    margin-right: 100px;
 }
 
 
@@ -795,7 +804,7 @@ img.top-icone{
     margin-bottom: 1.2rem;
 }
 
-nav.nav-open h5{
+nav.nav-open-container h5{
     font-size: 1.2rem;
     color: #558540;
 }
