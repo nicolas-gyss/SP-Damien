@@ -96,6 +96,127 @@ a:hover{
     float: right;
 }
 
+/********* CODE PERSONNEL PIERRE *******/
+
+.products {
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    margin: 12px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.breadcrumb a {
+    text-decoration: underline;
+    color: black;
+}
+
+.products2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.products .column-3 {
+    height: 340px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.products .column-3:nth-child(1){
+    flex: 3;
+}
+
+.products .column-3:nth-child(2){
+    flex: 4;
+}
+
+.products .column-3:nth-child(3){
+    flex: 2;
+}
+
+.products .column-3:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.products2 .column-3:nth-child(1) ul li {
+    border: 1px solid lightgrey;
+    margin: 5px;
+}
+
+.products2 .column-3 a:nth-child(2) img {
+    margin:10 0 0 10;
+}
+
+.avis {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333231;
+}
+
+.avis ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+}
+.avis p {
+    margin: 10 10 10 10;
+}
+
+.column-3:nth-child(2) img {
+    border: 1px solid lightgrey;
+    margin: 20 10 0 0px;
+
+}
+
+.products .star {
+    display: inline-block;
+    height:14px;
+    width:14px;
+    margin: 0 0 20 10;
+    background: url("../img/star.png")no-repeat 0px 0px;
+
+}
+
+.products .nostar {
+    display: inline-block;
+    height:14px;
+    width:14px;
+    margin-left: 10px;
+    background: url("../img/etoile-non-select.png")no-repeat 0px 0px;
+
+}
+
+.products .column-3:nth-child(2) li {
+    display: inline-block;
+}
+
+.social-bloc {
+    border-top : 1px solid lightgrey;
+    margin-top: 17px;
+
+}
+
+
+/********* FIN CODE PERSONNEL PIERRE *******/
+
+
+
+
+
 /********* CODE PERSONNEL NICO   *******/
 
 /* Bloc reassurance */
@@ -635,7 +756,6 @@ a:hover{
 
 
 /********* FIN CODE PERSONNEL NICO   *******/
-
 
 
 /********  CODE PERSONNEL ILDIKO  *******/
