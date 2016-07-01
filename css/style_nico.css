@@ -100,6 +100,7 @@ a:hover{
 
 .products {
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -108,7 +109,6 @@ a:hover{
 .breadcrumb {
     margin: 12px;
     display: block;
-    width: 100%;
     margin-top: 20px;
     background-color: white;
 }
@@ -121,10 +121,11 @@ a:hover{
 .products2 {
     display: flex;
     flex-direction: row;
+    
 }
 
 .products .column-3 {
-    height: 340px;
+    height: 290px;
     margin: 25px;
     display: flex;
     flex-direction: column;
@@ -136,10 +137,14 @@ a:hover{
 
 .products .column-3:nth-child(2){
     flex: 4;
+    margin-top: -20px;
 }
 
 .products .column-3:nth-child(3){
     flex: 2;
+    border: 1px solid lightgrey;
+    margin-top: -10px;
+    padding: 15px;
 }
 
 .products .column-3:nth-child(1) {
@@ -163,7 +168,8 @@ a:hover{
     flex-direction: row;
     font-size: 1.6rem;
     font-weight: bold;
-    color: #333231;
+    color: #333231;  
+
 }
 
 .avis ul {
@@ -178,16 +184,17 @@ a:hover{
 
 .column-3:nth-child(2) img {
     border: 1px solid lightgrey;
-    margin: 20 10 0 0px;
+    margin-top: 20px;
+    margin-right: 10px;
 
 }
 
 .products .star {
     display: inline-block;
-    height:14px;
-    width:14px;
-    margin: 0 0 20 10;
+    height:34px;
+    width:21px;
     background: url("../img/star.png")no-repeat 0px 0px;
+    
 
 }
 
@@ -195,7 +202,7 @@ a:hover{
     display: inline-block;
     height:14px;
     width:14px;
-    margin-left: 10px;
+    margin-left: 4px;
     background: url("../img/etoile-non-select.png")no-repeat 0px 0px;
 
 }
@@ -204,12 +211,81 @@ a:hover{
     display: inline-block;
 }
 
+.avis span {
+   margin-right: 10px;
+}
+
+.avis a{
+   text-decoration: underline;
+  }
+
 .social-bloc {
     border-top : 1px solid lightgrey;
     margin-top: 17px;
+   }
+
+.column-3-content li {
+   padding-bottom: 17px;
+   padding-top: 20px;
+   border-bottom : 1px solid lightgrey;
+   display:flex;
+   justify-content: space-between;
+}
+
+.column-3-content .price-solde {
+   flex: 1;
+   
+}
+
+.column-3-content .price {
+   margin-right: 9px;
+   font-size: 1.8rem;
+}
+
+.column-3-content label {
+   font-size: 1.6rem;
+   font-weight: bold;
+   color: #333231;
+   padding-top: 5px;
+}
+
+.column-3-content select{
+   font-size: 1.4rem;
+   font-weight: bold;
+   color: #333231;
+   padding: 7px;
+   border : 1px solid lightgrey;
 
 }
 
+.column-3-content button{
+   padding: 11px 25px;
+   background: #558540;
+   font-size: 1.6rem;
+   color: white;
+ }
+
+
+.info-expedition li {
+   border: none;
+   padding: 4px;
+}
+
+.info-expedition li span {
+  font-size: 1.4rem;
+   font-weight: bold;
+   color:  #558540;
+   text-align: left;
+
+}
+
+.info-expedition #available {
+  font-size: 1.4rem;
+   font-weight: bold;
+   color:  #558540;
+   padding-top: 15px;
+
+}
 
 /********* FIN CODE PERSONNEL PIERRE *******/
 
