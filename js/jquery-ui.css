@@ -655,3 +655,30 @@
 	filter: Alpha(Opacity=30); /* support: IE8 */
 	border-radius: 8px;
 }
+
+/* Responsive Nicolas  */
+@media screen and (max-width: 600px) {
+	/* bloc description */
+	.ui-widget-header .ui-state-default, .ui-tabs .ui-tabs-nav li {
+		height: 25px;
+		float: none;
+		padding: 8px 5px;
+		margin: 0px 0px 2px 0px;
+		background: url('../img/icon-plus.png') no-repeat 98% 50%;
+		background-color: #f6f9f9;
+
+	}
+
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+		margin-bottom: 2px;
+		padding-bottom:8px;
+		background: url('../img/icon-moins.png') no-repeat 98% 50%;
+		background-color: #ffffff;
+	}
+
+	.description .column-1{
+		margin-right:0px;
+	}
+}
+
+
