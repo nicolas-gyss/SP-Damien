@@ -743,6 +743,7 @@ a:hover{
 .description .column-2 figure{
     padding-left: 25px;
     margin: 0px;
+    max-width: 288px; 
 }
 
 .description .column-2 figcaption{
