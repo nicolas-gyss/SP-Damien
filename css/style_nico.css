@@ -692,7 +692,7 @@ img.top-icone{
 
 .form input{
     height: 37px;
-    width: 380px;
+    width: 200%;
     background: url('../img/loupe.png') no-repeat right;
     padding: 6px 5px 5px 10px;
     outline: none;
@@ -736,6 +736,7 @@ img.top-icone{
     border-bottom: solid 1px #eee8e3;
 }
 .main-navigation-container ul{
+    width : 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
