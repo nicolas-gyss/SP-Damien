@@ -978,27 +978,28 @@ a:hover{
 /********  CODE PERSONNEL ILDIKO  *******/
 
 
-
 /**********************
      HEADER
 ***********************/
 
+
 /* SECTION TOP */
-
-
-.top{
-    width: 100%;
-    height: 33px;
-    background-color: #393939;
-}
 
 .top-container{
     /* display: flex défini à la lg 29*/
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.contact > p, .localisation > p{
+.contact > p:not(.top-orange), .localisation > p{
     color: #ffffff;
     font-size: 1.4rem;
     float: right;
@@ -1007,7 +1008,7 @@ a:hover{
 img.top-icone{
     padding: 10px;
 }
-.top span{
+.top-orange{
     color: #f19319;
 }
 
@@ -1015,12 +1016,13 @@ img.top-icone{
 
 .middle{
     width: 100%;
-    height: 90px;
 }
 .middle-container{
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo{
@@ -1028,11 +1030,11 @@ img.top-icone{
 }
 
 .form input{
-    height: 37px;
-    width: 200%;
     background: url('../img/loupe.png') no-repeat right;
-    padding: 6px 5px 5px 10px;
+    background-size: 20px auto;
+    padding: 0.6rem 0.5rem 0.5rem 1rem;
     outline: none;
+    width: 30vw; /* optimale pour desktop */
 }
 .form input[placeholder]{
     font-style: italic;
@@ -1067,7 +1069,6 @@ img.top-icone{
 
 .main-navigation{
     width: 100%;
-    height: 51px;
     background-color: #f7f7f7;
     border-top: solid 1px #eee8e3;
     border-bottom: solid 1px #eee8e3;
@@ -1075,8 +1076,10 @@ img.top-icone{
 .main-navigation-container ul{
     width : 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* optimisé pour desktop  */
 }
 
 .main-navigation li{
@@ -1087,7 +1090,7 @@ img.top-icone{
 .main-navigation li:last-child{
     background-color: #393939;
 
-    align-self: flex-end; /* ça ne marche pas ici il faudrait aligner à droite*/
+    align-self: flex-end;
 }
 .main-navigation li:last-child a{
     display: inline-flex;
@@ -1217,25 +1220,167 @@ p:first-child{
      ZONE RESPONSIVE POUR PARTIE HEADER
 *******************************************/
 
-/*
-@media screen and (max-width: 1296px) {
-    /* Affichage en dessous de 1296px petit desktop + tablette
-    .heading-{
-        width: 95%;
+
+
+/********************************************************
+      MOBILE S-M-L : Affichage sous 425px
+ ********************************************************/
+
+
+@media screen and (max-width: 425px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /**************************************
+     * bandeau horaire et localisation    *
+     **************************************/
+
+    /* décaler verticalement la partie 'top' (n°tél et localisation) tout en bas  */
+    .top{
+        order: 1;
+    }
+    .top-container{
+        justify-content: space-around;
+
+    }
+    
+    .horaire{
+        display: none;
+    }
+
+    .contact, .localisation{
+        background-color: #393939;
+        padding-right: 1.7rem;
+
+    }
+
+
+    /* pour désactiver momentanément la partie dépassant chez Pierre */
+    div .products{
+        display: none;
+    }
+
+
+    /**************************************
+               logo - profil - panier
+     **************************************/
+    .form{
+        order: 1;
+    }
+    .logo{
+        width: 30vw;
+    }
+    .compte, .panier{
+        display: none;
+    }
+    
+    .branding, .compte_pagnier{
+        background-color: #f3f3f3;
+    }
+
+
+    /**************************************
+     *       navigation principale        *
+     **************************************/
+
+    .main-navigation-container ul{
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+
+    .main-navigation li:last-child{
+        background-color: #393939;
+        align-self: flex-start;
+    }
+
+    .top-container{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
     }
 }
-*/
+
+
+
+/* debug MOBIL S */
+@media screen and (max-width: 320px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        order: 1;
+    }
+
+    .top-container{
+        width: 100vw;
+        padding: 0 5px;
+    }
+    .contact, .localisation{
+        padding-right: 1rem;
+    }
+}
+
+
+/******************************************************
+                    TABLETTE : 800px
+ ******************************************************/
+
+@media screen and (max-width: 800px) {
+    .top{
+        width: 100%;
+        background-color: #393939;
+    }
+    div.top-container{
+        width: 100%;
+    }
+    .horaire{
+        margin-right: 0.4rem;
+    }
+
+}
 
 
 
 
+
+/******************************************************
+                 LAPTOP - DESKTOP
+ ******************************************************/
+
+
+@media screen and (max-width: 1440px){
+
+    /* beandeau sur tout la largeur avec arrière fond en continue */
+    .top{
+        width: 100%;
+        background-color: #393939;
+    }
+    .horaire{
+        margin-right: 0.4rem;
+    }
+
+    .form input{
+        background: url('../img/loupe.png') no-repeat right;
+        background-size: 20px auto;
+        padding: 0.6rem 0.5rem 0.5rem 1rem;
+        outline: none;
+        width: 80vw;
+    }
+}
 
 
 
 /********* FIN CODE PERSONNEL ILDIKO   *******/
 
 /***************************
-    AIDE DE CONCEPTION
+    AIDE DE CONCEPTION (zepelin)
 
 
 .large-price {
