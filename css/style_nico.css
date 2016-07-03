@@ -1293,7 +1293,7 @@ p:first-child{
     }
 
     .main-navigation li:last-child{
-        background-color: lightskyblue;
+        background-color: #393939;
         align-self: flex-start;
     }
 
