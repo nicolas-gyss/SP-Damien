@@ -400,7 +400,29 @@ a:hover{
 
 @media screen and (max-width: 600px) {
     /* Affichage en dessous de 600px smartphone*/
+    .products-content .column-3:nth-child(1) ul li {
+        margin: 0px 5px 5px 0px;
+    }
 
+    .products .column-3:last-child {
+        flex: 1;
+        border: none;
+        margin-right: 0px;
+        padding: 20px 10px;
+        align-items: center;
+        margin-top: 0px;
+        padding: 0px;
+
+    }
+
+    @media screen { @media (min-width: 0px) {} }{
+    .products .column-3:last-child { /* HACK iphone  */
+        height: 350px;
+        top: -75px;
+        position: relative;
+
+    }
+}
 }
 
 
