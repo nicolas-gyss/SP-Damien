@@ -104,6 +104,7 @@ a:hover{
     background-color: white;
     display: flex;
     flex-direction: column;
+    height:auto;/*test*/
 }
 
 .products .breadcrumb {
@@ -161,7 +162,7 @@ a:hover{
 }
 
 .products-content .column-3 a:nth-child(2) img {
-    margin:10 0 0 10;
+    margin:10px 0px 0px 10px; /*test*/
 }
 
 .avis {
@@ -361,6 +362,13 @@ a:hover{
         flex-direction: column-reverse;
         align-items: center;
         margin-right: 0px;
+        min-width: 0;/*test*/
+        min-height: 0;/*test*/
+    }
+
+    .products-content .column-3 a:nth-child(2) img {
+        margin: 0px 0px 100px 0px;
+        clear: both;
     }
 
     .products-content .column-3:nth-child(1) ul li {
@@ -380,13 +388,29 @@ a:hover{
     }
 
     .products .column-3:last-child {
+        display: block;
         flex: 0;
+        flex-basis: 0%;
         border: none;
         margin-right: 0px;
         padding: 20px 10px;
         align-items: center;
         margin-top: 15px;
         padding: 0px;
+    }
+
+    .column-3-content button{
+        margin:auto;
+    }
+
+    .products{
+        min-height:995px;
+    }
+
+    .column-3-content{
+        padding-top:0px;
+        margin-top:-15px;
+
     }
 
 }
@@ -405,6 +429,7 @@ a:hover{
     }
 
     .products .column-3:last-child {
+        flex-basis: 0%;
         flex: 1;
         border: none;
         margin-right: 0px;
@@ -413,6 +438,23 @@ a:hover{
         margin-top: 0px;
         padding: 0px;
 
+    }
+
+    .products{
+        min-height:1050px; /*test*/
+    }
+
+    .products-content .column-3 a:nth-child(2) img {
+        margin: 0px 0px 0px 0px;
+        clear: both;
+    }
+
+    .avis ul {
+        padding: 1px 0px 0px 10px;
+    }
+
+    .avis:nth-child(3) ul {
+        padding: 1px 0px 0px 39px;
     }
 
     @media screen { @media (min-width: 0px) {} }{
