@@ -1254,6 +1254,13 @@ p:first-child{
     /**************************************
                logo - profil - panier
      **************************************/
+
+    /* enlever marge et padding sur le container */
+    .middle-container{
+        padding: 0;
+        margin: 0;
+    }
+
     .form{
         order: 1;
     }
@@ -1279,11 +1286,15 @@ p:first-child{
         background-color: #f3f3f3;
     }
 
-    /* formulaire de recherche  */
-    form.recherche {
-        background-color: #ffffff; !important;
-        flex: 1;
+
+    /**************************************
+            formulaire de recherche
+     **************************************/
+
+    .un {
+        display: none;
     }
+
 
 
 
@@ -1368,12 +1379,12 @@ p:first-child{
         display: none;
     }
 
-    /**************************************
-                    bandeau branding
-     **************************************/
+    /*************************************************
+                    bandeau branding : formulaire
+     ************************************************/
 
-    .form input{
-        /* width: 10%;*/
+    .deux{
+        display: none;
     }
 
     /**************************************
@@ -1421,7 +1432,7 @@ and (max-width: 600px) {
     }
 
     /* bandeau branding */
-    .form input{
+    .form-un input {
         background: url('../img/loupe.png') no-repeat right;
         background-size: 20px auto;
         padding: 0.6rem 0.5rem 0.5rem 1rem;
@@ -1429,10 +1440,14 @@ and (max-width: 600px) {
        /*  width: 80vw;*/
     }
 
-    div.form{
+    div.form-un{
         flex: 1;
         width: 100%;
         padding-left: 1rem;
+    }
+
+    div.form-deux{
+        display: none;
     }
 
     /*  navigation open  */

@@ -16,6 +16,11 @@
             $( "#tabs" ).tabs();
         });
     </script>
+    <script>
+        $(function() {
+            $( "#menu" ).menu();
+        });
+    </script>
 
 </head>
 <body>
@@ -45,9 +50,10 @@
                         <img class="logo" src="img/logo-sportnature.png" alt="logo sport nature" width="260" height="79"/>
                     </a>
                 </div>
-                <div class="form">
+                <!-- 1er formulaire de recherche utilisé sur tablette et laptop, desktop -->
+                <div class="form-un">
                     <form class="recherche" action="#" method="post">
-                        <input type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" id="recherche" />
+                        <input class="un" type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" />
                     </form>
                 </div>
                 <div class="compte_pagnier">
@@ -68,16 +74,23 @@
                 </div>
             </div>
         </div>
+        <!-- 2ème formulaire de recherche utilisé sur mobile -->
+        <div class="form-deux">
+            <form class="recherche-deux" action="#" method="post">
+                <input class="deux" type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" />
+            </form>
+        </div>
 
         <div class="main-navigation">
             <nav class="main-navigation-container">
-                <ul>
+                <ul><!--id="menu"-->
                     <li class="current"><a href="#">CHAUSSURES</a>
+                        <!--
                         <ul>
-                            <li>
-
-                            </li>
+                            <li>test menu</li>
+                            <li>autre lien</li>
                         </ul>
+                        -->
 
                     </li>
                     <li><a href="#">VÊTEMENTS</a></li>
@@ -92,9 +105,9 @@
                 </ul>
             </nav>
         </div>
-
+<!--
         <div class="nav-open">
-            <nav class="nav-open-container">
+            <div class="nav-open-container">
                 <h5><a href="#">VOIR TOUTES LES CHAUSSURES</a></h5>
                 <div class="sous-rubriques">
                     <div class="homme">
@@ -141,8 +154,27 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
+-->
+
+        <!-- test  MENU jQuery -->
+        <ul style="width:100px; " id="menu">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ul>
+                    <li>Item 3-1</li>
+                    <li>Item 3-2</li>
+                    <li>Item 3-3</li>
+                    <li>Item 3-4</li>
+                    <li>Item 3-5</li>
+                </ul>
+            </li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+
     </header>
     <!-- Fin Header-->
 
