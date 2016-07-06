@@ -984,7 +984,7 @@ a:hover{
 @media screen and (max-width: 1296px) {
     /* Affichage en dessous de 1296px petit desktop + tablette */
 
-    .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content{
+    .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content, .main-navigation-container, .top-container, .middle-container{
         width:95%;
     }
 
@@ -1409,105 +1409,22 @@ header .top{
     border-bottom: none;
 }
 
-
-/*test
-.main-navigation-container ul li ul{
-    display: none;
-    position: absolute;
-    top:205px;
-}
-
-.main-navigation-container ul li:hover ul{
-    display: block;
-}
-
-*/
-/* SECTION MAIN NAVIGATION OPEN
-
-.nav-open{
-    background-color: #fff;
-    border-left: 1px solid #eee8e3;
-    border-right: 1px solid #eee8e3;
-    border-bottom: 1px solid #eee8e3;
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0 50px 0;
-}
-.nav-open-container{
-    flex-direction: column;
-    flex-wrap: nowrap;  /* pour LAPTOP et DESKTOP
-    justify-content: space-between;
-}
-
-.sous-rubriques{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 1rem;
-
-}
-
-
-
-.nav-open ul li{
-    margin-bottom: 1.2rem;
-}
-
-nav.nav-open-container h5 a{
-    font-size: 1.2rem;
-    color: #558540;
-}
-.nav-open-container a{
-    color: #626262;
-}
-
-p:first-child{
-    font-size: 1.4rem;
-    color: #626262;
-    padding-left: 8px;
-    padding-bottom: 21px;
-}
-
-/* AVANT H5 :  triangle avec css border
-.nav-open h5:after{
-
-    content: "";
-    border-color: transparent transparent transparent #558540;
-    border-style: solid;
-    border-width: 4.5px 0 4.5px 4px;
-    width: 0;
-    height: 0;
-    position: relative;
-    left: -5px;
-    top: 2px;
-}
-*/
-
-
-
-/* AVANT LI : le triangle avec le css border
-
-.sous-rubriques ul li:before{
-
-    content: "";
-    border-color: transparent transparent transparent #558540;
-    border-style: solid;
-    border-width: 2px 0 1px 1px;
-    width: 0;
-    height: 0;
-    position: relative;
-    left: -1px;
-    top: 2px;
-}
-*/
-
-
 /******************************************
      ZONE RESPONSIVE POUR PARTIE HEADER
 *******************************************/
 
+@media screen and (max-width: 800px) {
+    /* Affichage en dessous de 800px tablette portrait*/
 
+}
+
+@media screen and (max-width: 715px) {
+    /* Affichage en dessous de 600px smartphone*/
+}
+
+@media screen and (max-width: 600px) {
+    /* Affichage en dessous de 600px smartphone*/
+}
 
 /********************************************************
  *     MOBILE S-M-L : Affichage jusqu'au 425px          *
