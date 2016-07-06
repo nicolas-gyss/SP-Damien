@@ -984,7 +984,18 @@ a:hover{
 @media screen and (max-width: 1296px) {
     /* Affichage en dessous de 1296px petit desktop + tablette */
 
-    .main-container, .reass-content, .payment-content, .social-content, .footer-content, .cookie-content, .main-navigation-container, .top-container, .middle-container{
+    .main-container,
+    .reass-content,
+    .payment-content,
+    .social-content,
+    .footer-content,
+    .cookie-content,
+    .main-navigation-container,
+    .top-container,
+    .middle-container,
+    .main-navigation-container ul li ul li,
+    .form-mobile-container,
+    .middle-container-mobile{
         width:95%;
     }
 
@@ -1208,6 +1219,10 @@ header .top{
 
 /* SECTION MIDDLE */
 
+.middle-container-mobile{
+    display:none;
+}
+
 .middle-container{
     justify-content: space-between;
     padding:7px 16px 7px 30px;
@@ -1264,9 +1279,11 @@ header .top{
 }
 
 /* formulaire smartphone */
-.form-deux{
+
+.form-mobile{
     display: none;
 }
+
 
 
 /* SECTION MAIN NAVIGATION */
@@ -1342,7 +1359,7 @@ header .top{
     width: 100%;
     left: 0px;
     background: #ffffff;
-    border: solid 1px #eee8e3;
+    border-bottom: solid 1px #eee8e3;
 }
 
 .main-navigation-container ul li ul li, .main-navigation-container ul li ul li:last-child{
@@ -1409,31 +1426,152 @@ header .top{
     border-bottom: none;
 }
 
+[id="accordion"] {
+    display: none;
+}
+
 /******************************************
      ZONE RESPONSIVE POUR PARTIE HEADER
 *******************************************/
 
-@media screen and (max-width: 800px) {
-    /* Affichage en dessous de 800px tablette portrait*/
+@media screen and (max-width: 970px) {
+    /* Affichage en dessous de 970px tablette portrait*/
 
+
+
+    .middle-container form {
+        flex: 1;
+    }
+
+    .middle-container .compte_panier{
+        flex:1.1;
+    }
+
+    .middle-container .compte_panier  li{
+        padding: 5px 10px 8px 10px;
+    }
+
+    .middle-container .branding{
+        margin-right: 20px;
+    }
 }
 
-@media screen and (max-width: 715px) {
-    /* Affichage en dessous de 600px smartphone*/
+@media screen and (max-width: 826px) {
+    /* Affichage en dessous de 826px intermediaire*/
+    header .top, .main-navigation, .middle-container{
+        display: none;
+    }
+
+    [id="accordion"] {
+        display: block;
+    }
+
+    .middle{
+        display: inline-flex;
+        background: #f3f3f3;
+        border-bottom:solid 1px #f3f3f3;
+        overflow: hidden;
+    }
+
+    .form-mobile{
+        display: flex;
+        width: 100%;
+    }
+
+    .form-mobile-container {
+        margin: 14px 11px;
+    }
+
+    .middle-container-mobile{
+        display: inherit;
+    }
+
+    .middle-container-mobile .menu{
+        margin-right:5px;
+    }
+
+    .middle-container-mobile{
+        justify-content: space-between;
+        padding: 7px 15px 7px 15px;
+        display: flex;
+    }
+
+    .middle-container-mobile div, .middle form .mobile form{
+        align-self: center;
+
+    }
+
+
+    .middle-container-mobile .branding{
+        margin-right: 5px;
+        max-width: 40%;
+    }
+
+    .middle form .mobile{
+        flex:2;
+        order:3;
+    }
+
+    .form-mobile-container .mobile input{
+        background: url('../img/loupe.png') no-repeat 99.5% 50%;
+        padding: 11px;
+        width: 100%;
+        border: solid 1px #eee8e3;
+    }
+    .form-mobile-container .mobile input[placeholder]{
+        font-style: italic;
+        font-size: 1.4rem;
+        color:#7f7f7f;
+    }
+
+    .middle-container-mobile .compte_panier ul{
+        height: 43px;
+    }
+
+    .middle-container-mobile .compte_panier  li{
+        display: inline;
+        padding: 5px 15px 8px 15px;
+        top: -10px;
+        position: relative;
+    }
+    .middle-container-mobile .compte_panier ul li:last-child{
+        border-left: 1px solid #eee8e3;
+
+    }
+
+    .middle-container-mobile .compte_panier  li a {
+        display: inline-flex;
+        color: #333231;
+    }
+    .middle-container-mobile .compte_panier .compte, .middle-container-mobile .compte_panier .panier{
+        padding-top: 13px;
+    }
+
+    .middle-container-mobile .compte_panier img{
+        top: 8px;
+        margin-right: 0px;
+        position: relative;
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
     /* Affichage en dessous de 600px smartphone*/
 }
 
+@media screen and (max-width: 425px){
+    /* Affichage en dessous de 425px smartphone*/
+}
+
 /********************************************************
  *     MOBILE S-M-L : Affichage jusqu'au 425px          *
  ********************************************************/
 
-
+/*
 @media screen and (max-width: 425px){
 
-    header{
+  /*  header{
         display: flex;
         flex-direction: column;
     }
@@ -1442,12 +1580,12 @@ header .top{
           bandeau horaire et localisation
      **************************************/
 
-    /* décaler verticalement la partie 'top' (n°tél et localisation) tout en bas  */
+    /* décaler verticalement la partie 'top' (n°tél et localisation) tout en bas
     .top{
         order: 1;
     }
     .top-container{
-        /*justify-content: space-around;*/
+        /*justify-content: space-around;
         align-content: flex-start;
 
     }
@@ -1467,13 +1605,13 @@ header .top{
                logo - profil - panier
      **************************************/
 
-    /* enlever marge et padding sur le container */
+    /* enlever marge et padding sur le container
     .middle-container{
         padding: 0;
         margin: 0;
     }
 
-    .form{
+   /* .form{
         order: 1;
     }
     .logo{
@@ -1501,7 +1639,7 @@ header .top{
 
     /**************************************
             formulaire de recherche
-     **************************************/
+     **************************************
 
     .un {
         display: none;
@@ -1512,7 +1650,7 @@ header .top{
 
     /**************************************
               navigation principale
-     **************************************/
+     **************************************
 
     .main-navigation-container ul{
         flex-direction: column;
@@ -1533,7 +1671,7 @@ header .top{
 
 
 
-/* ajustement pour  MOBIL S  sous 320px */
+/* ajustement pour  MOBIL S  sous 320px *
 @media screen and (max-width: 320px){
     header{
         display: flex;
@@ -1553,7 +1691,7 @@ header .top{
         padding-right: 1rem;
     }
 
-    /**************** faire rentrer les 2 icônes à côté du logo */
+    /**************** faire rentrer les 2 icônes à côté du logo *
 
     .icone-profil, .icone-panier{
         flex-shrink: 1;
@@ -1615,7 +1753,7 @@ header .top{
 }
 
 
-/*  debug  : skip long text dans bandeau top entre 426px - 600px */
+/*  debug  : skip long text dans bandeau top entre 426px - 600px *
 @media screen
 and (min-width: 426px)
 and (max-width: 600px) {

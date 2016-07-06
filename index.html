@@ -22,6 +22,12 @@
         });
     </script>
 
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion();
+        });
+    </script>
+
 </head>
 <body>
     <!-- Header-->
@@ -67,12 +73,45 @@
                     </ul>
                 </div>
             </div>
+            <div class="middle-container-mobile">
+                <div class="menu">
+                    <a href="" title="Menu">
+                        <img  src="img/burger-menu.png" alt="picto menu" width="29" height="29"/>
+                    </a>
+                </div>
+
+                <div class="branding">
+                    <a href="index.html" title="retour à l'accueil">
+                        <img class="logo" src="img/logo-sportnature.png" alt="logo sport nature" width="260" height="78"/>
+                    </a>
+                </div>
+
+                <div class="compte_panier">
+                    <ul class="acces">
+                        <li>
+                            <a class="compte" href="#" title="Mon compte">
+                                <img class="icone-profil" src="img/profile.png" alt="icône de profile de l'utilisateur" width="27" height="27" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="panier" href="#" title="Mon panier">
+                                <img class="icone-panier" src="img/panier.png" alt="icône panier" width="31" height="29" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
-        <!-- 2ème formulaire de recherche utilisé sur mobile -->
-        <div class="form-deux">
-            <form class="recherche-deux" action="#" method="post">
-                <input class="deux" type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" />
-            </form>
+        <div class="form-mobile">
+            <div class="form-mobile-container">
+                <!-- 1er formulaire de recherche utilisé sur tablette et laptop, desktop -->
+                <form class="mobile recherche" action="#" method="post">
+                    <input class="un" type="search" placeholder="Je cherche un produit, une marques, etc." name="recherche" />
+                </form>
+            </div>
+
         </div>
 
         <div class="main-navigation">
@@ -140,6 +179,59 @@
                 </span>
             </nav>
         </div>
+
+        <!-- menu mobile -->
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+                <p>
+                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+                <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+                <p>
+                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+                <p>
+                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                    mauris vel est.
+                </p>
+                <p>
+                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- fin menu mobile -->
 <!--
         <div class="nav-open">
             <div class="nav-open-container">
