@@ -11,21 +11,27 @@
     <link rel="stylesheet" href="js/jquery-ui.css">
     <script src="js/jquery-3.0.0.js"></script>
     <script src="js/jquery-ui.js"></script>
+   
     <script>
+
         $(function() {
             $( "#tabs" ).tabs();
         });
-    </script>
-    <script>
-        $(function() {
-            $( "#menu" ).menu();
-        });
-    </script>
 
-    <script>
         $(function() {
-            $( "#accordion" ).accordion();
+            $( "#accordion" ).accordion({
+                heightStyle: "content",
+                collapsible: true,
+                active: false});
         });
+
+        $(function() {
+            $( "#accordion-niveau-2" ).accordion({
+                heightStyle: "content",
+                collapsible: true,
+                active: false});
+        });
+
     </script>
 
 </head>
@@ -76,7 +82,7 @@
             <div class="middle-container-mobile">
                 <div class="menu">
                     <a href="" title="Menu">
-                        <img  src="img/burger-menu.png" alt="picto menu" width="29" height="29"/>
+                        <img src="img/burger-menu.png" alt="picto menu" width="29" height="29"/>
                     </a>
                 </div>
 
@@ -116,7 +122,7 @@
 
         <div class="main-navigation">
             <nav class="main-navigation-container">
-                <ul><!--id="menu"-->
+                <ul>
                     <li class="current"><a href="#">CHAUSSURES</a>
                         <!-- Contenu du menu -->
                         <ul>
@@ -182,16 +188,62 @@
 
         <!-- menu mobile -->
         <div id="accordion">
-            <h3>Section 1</h3>
+            <h3>Chaussure</h3>
             <div>
-                <p>
-                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                </p>
+                <a class="accordion-mon-titre" href="#" title="Voir toute la collection">Voir toutes les chaussures</a>
+                <div id="accordion-niveau-2">
+                    <h3>Homme sport</h3>
+                    <div>
+                        <p>
+                            <ul>
+                                <li><a ref="#" title="Running">Running - Trail - Athlétisme</a></li>
+                                <li><a ref="#" title="Randonnée">Randonnée - Montagne</a></li>
+                                <li><a ref="#" title="Sport en équipe">Sports d'équipe</a></li>
+                                <li><a ref="#" title="Sport de raquette">Sports de raquette</a></li>
+                                <li><a ref="#" title="Natation">Natation - Piscine</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <h3>Femme sport</h3>
+                    <div>
+                        <p>
+                        <ul>
+                            <li><a ref="#" title="Running">Running - Trail - Athlétisme</a></li>
+                            <li><a ref="#" title="Randonnée">Randonnée - Montagne</a></li>
+                            <li><a ref="#" title="Sport en équipe">Sports d'équipe</a></li>
+                            <li><a ref="#" title="Sport de raquette">Sports de raquette</a></li>
+                            <li><a ref="#" title="Natation">Natation - Piscine</a></li>
+                            <li><a ref="#" title="Sport de combat">Sports de combat</a></li>
+                            <li><a ref="#" title="Vélo">Vélo</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <h3>Enfant sport</h3>
+                    <div>
+                        <p>
+                        <ul>
+                            <li><a ref="#" title="Running">Running - Trail - Athlétisme</a></li>
+                            <li><a ref="#" title="Randonnée">Randonnée - Montagne</a></li>
+                            <li><a ref="#" title="Sport en équipe">Sports d'équipe</a></li>
+                            <li><a ref="#" title="Sport de raquette">Sports de raquette</a></li>
+                            <li><a ref="#" title="Natation">Natation - Piscine</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <h3>Accessoires</h3>
+                    <div>
+                        <p>
+                        <ul>
+                            <li><a ref="#" title="Semelle">Semelles - lacets</a></li>
+                            <li><a ref="#" title="Entretien">Entretien</a></li>
+                            <li><a ref="#" title="Crampon">Crampons</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <h3>Section 2</h3>
+            <h3>Vêtements</h3>
             <div>
                 <p>
                     Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
@@ -200,7 +252,7 @@
                     suscipit faucibus urna.
                 </p>
             </div>
-            <h3>Section 3</h3>
+            <h3>Randonnée</h3>
             <div>
                 <p>
                     Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
@@ -214,7 +266,7 @@
                     <li>List item three</li>
                 </ul>
             </div>
-            <h3>Section 4</h3>
+            <h3>Pêche</h3>
             <div>
                 <p>
                     Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -228,62 +280,10 @@
                     inceptos himenaeos.
                 </p>
             </div>
+            <h3>Cartes et itinéraires</h3>
+
         </div>
-
-
         <!-- fin menu mobile -->
-<!--
-        <div class="nav-open">
-            <div class="nav-open-container">
-                <h5><a href="#">VOIR TOUTES LES CHAUSSURES</a></h5>
-                <div class="sous-rubriques">
-                    <div class="homme">
-                        <p><a href="#">HOMME SPORT</a></p>
-                        <ul>
-                            <li><a href="#">Running - Trail - Athlétisme</a></li>
-                            <li><a href="#">Randonnée - Montagne</a></li>
-                            <li><a href="#">Sports d'équipe</a></li>
-                            <li><a href="#">Sports de raquette</a></li>
-                            <li><a href="#">Natation - Piscine</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="femme">
-                        <p><a href="#">FEMME SPORT</a></p>
-                        <ul>
-                            <li><a href="#">Running - Trail - Athlétisme</a></li>
-                            <li><a href="#">Randonnée - Montagne</a></li>
-                            <li><a href="#">Sports d'équipe</a></li>
-                            <li><a href="#">Sports de raquette</a></li>
-                            <li><a href="#">Natation - Piscine</a></li>
-                            <li><a href="#">Sports de combat</a></li>
-                            <li><a href="#">Vélo</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="enfant">
-                        <p><a href="#">ENFANT SPORT</a></p>
-                        <ul>
-                            <li><a href="#">Sports d'équipe</a></li>
-                            <li><a href="#">Sports de raquette</a></li>
-                            <li><a href="#">Danse</a></li>
-                            <li><a href="#">Equitation - Golf</a></li>
-                            <li><a href="#">Natation - Piscine</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="accessoires">
-                        <p><a href="#">ACCESSOIRES</a></p>
-                        <ul>
-                            <li><a href="#">Semelles - Lacets</a></li>
-                            <li><a href="#">Entretien</a></li>
-                            <li><a href="#">Crampons</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
--->
     </header>
     <!-- Fin Header-->
 

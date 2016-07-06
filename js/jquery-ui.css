@@ -693,7 +693,32 @@
 	padding: .5em .5em .5em .7em;
 	min-height: 0; /* support: IE7 */
 	font-size: 100%;
+	border-bottom: solid 1px #eee8e3;
 }
+
+.ui-accordion-header, .ui-accordion-header-active{
+	background: #fdfdfd;
+}
+
+.ui-accordion-header{
+	background: url('../img/icon-plus.png') no-repeat 98% 50%;
+	color: #696969;
+	font-family: Lato;
+	font-weight:bold;
+	font-size:1.6rem;
+	text-transform: uppercase;
+}
+
+.ui-accordion-header-active{
+	background: url('../img/icon-moins.png') no-repeat 98% 50%;
+	color: #558540!important;
+	font-family: Lato;
+	font-weight:bold!important;
+	font-size:1.6rem;
+	text-transform: uppercase;
+
+}
+
 .ui-accordion .ui-accordion-icons {
 	padding-left: 2.2em;
 }
@@ -701,13 +726,15 @@
 	padding-left: 2.2em;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-	position: absolute;
+	display: none;
+	/*position: absolute;
 	left: .5em;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -8px;*/
 }
 .ui-accordion .ui-accordion-content {
 	padding: 1em 2.2em;
 	border-top: 0;
 	overflow: auto;
+	height: auto!important;
 }
