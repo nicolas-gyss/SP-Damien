@@ -102,7 +102,7 @@
             </div>
             <div class="middle-container-mobile">
                 <div id="btn_menu" class="menu">
-                    <a href="" title="Menu">
+                    <a href="#" title="Menu">
                         <img src="img/burger-menu.png" alt="picto menu" width="29" height="29"/>
                     </a>
                 </div>
@@ -208,7 +208,6 @@
         </div>
 
         <!-- menu mobile -->
-        <div id="test" style="display:block;">
         <div id="accordion">
             <h3>Chaussure</h3>
             <div>
@@ -304,7 +303,6 @@
             </div>
             <h3>Cartes et itinéraires</h3>
 
-        </div>
         </div>
         <!-- fin menu mobile -->
     </header>
@@ -707,10 +705,11 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#test').toggle();
+            $('#accordion').slideToggle();
 
-            $('#btn_menu').click(function() {
-                $('#test').toggle();
+            $('#btn_menu').click(function(event) {
+                event.preventDefault();
+                $('#accordion').slideToggle();
             });
 
         });

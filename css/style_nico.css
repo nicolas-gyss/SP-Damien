@@ -1551,6 +1551,7 @@ header .top{
         background: #f3f3f3;
         border-bottom:solid 1px #f3f3f3;
         overflow: hidden;
+        width: 100%;
     }
 
     .form-mobile{
