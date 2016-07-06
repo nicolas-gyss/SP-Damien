@@ -1102,13 +1102,7 @@ a:hover{
 
 
 @media screen and (max-width: 600px) {
-    
-    /*  Pour debug */
-    /*.main{
-        display: none;
-    }
-    /******************/
-    
+
     /* Affichage en dessous de 600px smartphone*/
     .footer-content, .bloc-conseil, .social-content, .payment-content, .reass-content {
         flex-direction: column;
@@ -1463,7 +1457,7 @@ header .top{
     }
 
     [id="accordion"] {
-        display: block;
+        display: none;
         height:auto;
     }
 
